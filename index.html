@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class ="page-header">Equipment Inventory Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="left-sidebar">
+        <h2>Navigation</h2>
+        <ul class="nav-list">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="items.html">Items</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            
+        </ul>
+    </div>
+
+    <div class="main-content">
+        
+    </div>
+
+    <div class="main-content">
+        <div class="dashboard-container">
+            <h1>Equipment Inventory Dashboard</h1>
+
+            <div class="dashboard">
+                <div class="card">
+                    <h2>Total Equipment</h2>
+                    <p id="totalEquipment">0</p>
+                </div>
+                <div class="card">
+                    <h2>Total Quantity</h2>
+                    <p id="totalQuantity">0</p>
+                </div>
+                <div class="card">
+                    <h2>Good Condition</h2>
+                    <p id="goodCondition">0</p>
+                </div>
+                <div class="card">
+                    <h2>Needs Repair</h2>
+                    <p id="needsRepair">0</p>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <canvas id="conditionChart"></canvas>
+            </div>
+<!--
+            <div class="form-container">
+                <h2>Add New Equipment</h2>
+                <form id="equipmentForm">
+                    <input type="text" id="equipmentName" placeholder="Equipment Name" required>
+                    <input type="text" id="equipmentType" placeholder="Equipment Type" required>
+                    <input type="number" id="quantity" placeholder="Quantity" required>
+                    <input type="text" id="condition" placeholder="Condition" required>
+                    <button type="submit">Add Equipment</button>
+                </form>
+            </div>
+
+            <h2>Inventory List</h2>
+            <table id="inventoryTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Quantity</th>
+                        <th>Condition</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="inventoryBody">
+                    <!-- Equipment items will be added here dynamically -->
+                </tbody>
+            </table> 
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
