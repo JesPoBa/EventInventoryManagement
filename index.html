@@ -7,7 +7,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <div class="left-sidebar">
+        <!-- Account Profile Section -->
+        <div class="account-profile">
+            <img src="blank-profile-picture.png" alt="Profile Picture" class="profile-picture"
+                width="80px" 
+                height="80px">
+            <p class="account-name">John Doe</p>
+        </div>
+        <!-- Navigation -->
         <h2>Navigation</h2>
         <ul class="nav-list">
             <li><a href="index.html">Dashboard</a></li>
@@ -17,7 +26,7 @@
             
         </ul>
     </div>
-
+    <!-- Main Content -->
     <div class="main-content">
         
     </div>
@@ -48,34 +57,6 @@
             <div class="chart-container">
                 <canvas id="conditionChart"></canvas>
             </div>
-<!--
-            <div class="form-container">
-                <h2>Add New Equipment</h2>
-                <form id="equipmentForm">
-                    <input type="text" id="equipmentName" placeholder="Equipment Name" required>
-                    <input type="text" id="equipmentType" placeholder="Equipment Type" required>
-                    <input type="number" id="quantity" placeholder="Quantity" required>
-                    <input type="text" id="condition" placeholder="Condition" required>
-                    <button type="submit">Add Equipment</button>
-                </form>
-            </div>
-
-            <h2>Inventory List</h2>
-            <table id="inventoryTable">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Type</th>
-                        <th>Quantity</th>
-                        <th>Condition</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody id="inventoryBody">
-                    <!-- Equipment items will be added here dynamically -->
-                </tbody>
-            </table> 
-
         </div>
     </div>
 
